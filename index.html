@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">	
+	<link rel="stylesheet" href="square/blue.css">	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <!-- Меню -->
+	<div id="sidebar">
+		<ul>
+		<li><img src="image/календарь_иконка.png" class="ico"><a href="#">Календарь</a></li>
+		<li><img src="image/история_иконка.png" class="ico"><a href="#">История</a></li>
+		<li><img src="image/аналитика_иконка.png" class="ico"><a href="#">Аналитика</a></li>
+		<li><img src="image/клиенти_иконка.png" class="ico"><a href="#">Клиенты</a></li>
+		<li><img src="image/доставка_иконка.png" class="ico"><a href="#">Доставка</a></li>
+		<li><img src="image/скидки_иконка.png" class="ico"><a href="#">Скидки</a></li>
+		<li><img src="image/настройки_иконка.png" class="ico"><a href="#">Настройка</a></li>
+		</ul>
+		<!-- Кнопка для вызова меню -->
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>		
+	</div>
+	<!-- Профиль -->
+	<div id="profile">		
+		<ul id="menu">
+		    <img src="image/photo.png" height="38" width="38">
+		    <li><a href="" >Андрей</a></li>					
+			<li><a id="butmenu">&#9660</a></li>			
+		</ul>
+	</div>	
+	</header>
+	<!-- Меню профиля -->
+	<div id="topmenu">
+		<ul>
+			<li><a href="#">Клиенты</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Скидки</a></li>
+			<li><a href="#">Помощь</a></li>
+			<li><a href="#">Настройка</a></li>
+			<li><a href="#">Выход</a></li>
+		</ul>
+	</div>
+
+	<section id="form">
+		<div class="container">
+			<div class="row">
+			<!-- Общая информация -->
+				<div class="col-md-6 ">
+					<div id="general_information">
+						<h3>Общая информация</h3>						   
+					    <img src="image/foto.png"  alt="">
+					    <div id="forms">
+					       <p id="Name">Название</p><br>
+					       <input type="text" id="NameBox"><br>
+					       <p id="ContactPerson">Контактное лицо</p>
+					       <input type="text" id="ContactBox"><br>
+					       <p class="Phone">Телефон</p><p class="Site">Сайт</p><br>
+					       <input type="text" class="PhoneBox">
+					       <input type="text" class="SiteBox"><br>
+					       <p class="Phone">Email</p><p class="Language">Язык</p><br>
+					       <input type="text" class="PhoneBox">
+					       <input type="text" class="SiteBox"><br><br>
+					       <input type="checkbox" checked="" class="time">
+					       <p id="TimeOrder">Срочные заказы</p>
+					    </div>					         				    			
+				    </div>
+				</div>
+
+				<!-- Юридическая информация -->
+				<div class="col-md-6 ">
+					<div id="legal_information">
+						<h3>Юридическая информация</h3>
+						<p id="NameTwo">Название</p><br>
+					    <input type="text" id="NameBoxTwo"><br>
+					    <p id="LegalAddress">Юридический адресс</p>
+					    <input type="text" id="LegalAddressBox">
+					    <p id="LegalAddress">Адрес офиса</p>
+					    <input type="text" id="LegalAddressBox"><br>
+					    <p id="LegalAddress">Индекс</p>
+					    <input type="text" id="IndexBox">
+					</div>
+				</div>					
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+			<!-- Рабочее время -->
+				<div class="col-md-6 ">
+					<div id="supplementary">
+						<h3>Рабочее время</h3>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Бустер</span><br><br>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Детское кресло</span>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Люлька</span>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">GPS навигатор</span>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Багажник на крише</span>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Второй водитель в договоре</span>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Цепи противоскольжения</span>				         				    			
+				    </div>
+				</div>
+
+				<!-- Дополнительное оборудование и услуги -->
+				<div class="col-md-6 ">
+					<div id="supplementary">
+						<h3>Дополнительное оборудование и услуги</h3>
+						<span class="NameEquipment">Название</span>
+						<span class="eDay">€/день</span>
+						<span class="Maxe">Макс. цена за услугу</span><br><br>						
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Бустер</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Детское кресло</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Люлька</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">GPS навигатор</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Багажник на крише</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Второй водитель в договоре</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Цепи противоскольжения</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Крепление для лыж</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">Крепление для сноуборда</span>
+						<input type="text" class="edayBox">
+						<input type="text" class="MaxeBox"><br><br>
+						<input type="checkbox" checked="" class="time_two">
+						<span class="NameId">SIM-карта</span>						
+						<input type="text" class="edayBox2">
+						<span id="ena">€ на счету</span>
+						<input type="text" class="MaxeBox2">
+					</div>
+				</div>					
+			</div>
+		</div>
+
+	</section>
+
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/ichek/icheck.js"></script>
+	<script src="js/common.js" ></script>
+</body>
+</html>

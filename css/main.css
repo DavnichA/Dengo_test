@@ -1,0 +1,349 @@
+*{
+	margin:0px;
+	padding:0px; 
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color:#eef1f7;
+}
+
+/*Боковое меню*/
+
+#sidebar{
+	background:#0e1a36;
+	width: 230px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: -230px;
+	top: 0px;
+	transition:left 0.3s linear;
+	z-index: 100;
+}
+
+#sidebar.visible{
+	left: 0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar ul{	
+	margin-top: 76px;
+	
+}
+
+#sidebar ul li{
+	list-style:none ;
+	text-align: left;	
+}
+
+#sidebar ul li:hover{
+  background-color:#122143;
+  cursor: pointer;
+  border-left:8px solid #5584ff;
+}
+
+#sidebar ul li a{
+	margin-left: 28px;
+	color:#ffffff;	
+	height: 60px;
+	font-family: lato;
+	text-decoration: none;
+	display:inline-block;	
+	padding-top: 18px;	
+}
+
+.ico{
+	margin-left: 28px;
+}
+
+#sidebar-btn{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 15px;
+	margin-left:10px;
+	margin-top: 18px;	
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: -60px;
+}
+
+#sidebar-btn span{
+	height: 3px;
+	background: #111;
+	margin-bottom: 5px;
+	display: block;	
+}
+
+/*Конец стилей бокового меню*/
+
+header{
+	background-color: #fff;
+	width: 100%;
+	height: 50px;
+	display: block;
+}
+
+/*Профиль*/
+
+#menu {
+        padding: 0;
+        margin: 0;
+        font-family:  Verdana;
+        float: right;
+        margin-right: 2.5%;       
+}
+
+#menu li{
+	display: inline-block;	
+}
+
+#menu li a{
+	color: black;
+	font-family: lato;
+	font-size: 16px;
+}
+
+#menu img{
+	margin-right: 15px;
+	margin-top: 6px;
+}
+
+/*Меню пользователя*/
+
+#topmenu{
+	background:#0e1a35;
+	width: 160px;
+	height: 288px;	
+	position: absolute;
+	right: 0;
+	display: none;
+	z-index: 150;		
+}
+
+#topmenu.menuup{
+  display:block;  
+}
+
+#butmenu{
+	cursor: pointer;
+}
+
+#topmenu ul li{
+	list-style:none ;
+	text-align: left;
+}
+
+#topmenu ul li a{
+	margin-left: 55px;
+	color:#ffffff;
+	height: 47px;	
+	font-family: lato;
+	text-decoration: none;
+	display:inline-block;	
+	padding-top: 14px;
+
+}
+
+#topmenu ul li:hover{	
+	background-color:#122143;
+	cursor: pointer;
+}
+
+/*Общая информация*/
+
+#general_information {
+	background-color: #fff;
+	margin-top: 10px;
+	height: 338px;
+	z-index: -100;	
+}
+
+#general_information h3{
+	text-align: center;
+	font-family: lato;
+	padding-top: 20px;
+	opacity: 0.8;
+}
+
+#general_information img{
+  max-width: 100px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 18px;
+   
+}
+
+#Name {		
+	margin-left: 50px;
+	font-family: lato;	
+	float: left;
+
+}
+#NameBox{
+	float: left;
+	width: 370px;
+	margin-left:50px;
+	margin-top: 5px;	
+}
+
+#forms{
+	display: inline-block;
+}
+
+#ContactPerson{
+	margin-top: 20px;
+	margin-left: 50px;
+	font-family: lato;
+	
+}
+#ContactBox{    
+	width: 370px;
+	margin-left:50px;		
+}
+
+.Phone{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-family: lato;
+}
+.PhoneBox{
+    width: 175px;
+	margin-left:50px;
+}
+.Site{
+	display: inline-block;
+	margin-left: 143px;
+	font-family: lato;
+}
+.SiteBox{
+	width: 175px;
+	margin-left: 15px;
+}
+.Language{
+	display: inline-block;
+	margin-left: 162px;
+	font-family: lato;
+}
+#TimeOrder{
+	display: inline-block;
+	margin-left: 10px;
+	font-family: lato;
+}
+
+/*Юридическая информация*/
+
+#legal_information{
+	background-color: #fff;
+	margin-top: 10px;
+	height: 338px;
+	z-index: -100;
+}
+
+#legal_information h3{
+	text-align: center;
+	font-family: lato;
+	padding-top: 20px;
+	opacity: 0.8;
+}
+
+#NameTwo{
+	margin-left: 95px;
+	font-family: lato;	
+	float: left;
+}
+#NameBoxTwo{
+	float: left;
+	width: 370px;
+	margin-left:95px;
+	margin-top: 5px;
+}
+
+#LegalAddress{
+	margin-top: 20px;
+	margin-left: 95px;
+	font-family: lato;
+}
+#LegalAddressBox{
+	width: 370px;
+	margin-left:95px;
+}
+
+#OfficeAdress{
+	margin-left: 95px;
+	font-family: lato;
+}
+
+#IndexBox{
+	margin-left:95px;
+	width: 175px;
+}
+
+/*Дополнительное оборудование и услуги*/
+
+.NameEquipment{	
+	font-family: lato;
+	margin-top:10px;
+	margin-left: 86px;
+}
+#supplementary{
+	background-color: #fff;
+	margin-top: 10px;
+	height: 520px;
+	z-index: -100;
+}
+#supplementary h3{
+	text-align: center;
+	font-family: lato;
+	padding-top: 20px;
+	opacity: 0.8;
+}
+
+.eDay{
+   font-family: lato;
+   margin-top:10px;
+   margin-left: 136px;
+}
+.Maxe{   
+   font-family: lato;
+   margin-top:10px;
+   margin-left: 61px;
+}
+.NameId{
+	font-family: lato;
+	margin-left: 10px;
+}
+
+.edayBox{
+	float: right;	
+	margin-right: 194px;
+	width: 82px;
+}
+.MaxeBox{
+	float: right;	
+	margin-right: -233px;
+	width: 125px;
+}
+
+.edayBox2{
+	float: right;
+	margin-right: 234px;
+	width: 42px;
+}
+#ena{
+	font-family: lato;
+	float: right;
+	margin-right: -95px;
+	font-size: 12px;
+}
+.MaxeBox2{
+	float: right;
+	margin-right: -233px;
+	width: 125px;
+}
+
+/*Рабочее время*/
